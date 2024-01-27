@@ -1,0 +1,1763 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/5/2023 7:26:33 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-K83S9BL2"
+  DTS:CreatorName="LAPTOP-K83S9BL2\lomah"
+  DTS:DTSID="{994A054B-FEDE-4BC8-9E2E-73183969DC50}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{1AFBFA03-77F9-42D5-8324-75D3975DF671}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{3BD9732E-C471-4CE7-9865-4CDF763BEA98}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\category.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{97E2F776-2DBF-4C1E-BF81-8B648782B106}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\category.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 10]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C4CAD8D9-EF24-4F79-ACA9-EC313E873834}"
+      DTS:ObjectName="Excel Connection Manager 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\category.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 11]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{597EA78C-FAF7-4BA7-BB37-2A7EC3864E2C}"
+      DTS:ObjectName="Excel Connection Manager 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\category.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 12]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{56A01704-5446-4F3D-8C25-2FA705E8C3A4}"
+      DTS:ObjectName="Excel Connection Manager 12">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.15.0;Data Source=C:\Users\lomah\Downloads\category.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 13]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E90FAF36-3B63-47B2-89BA-F839D1B67E6D}"
+      DTS:ObjectName="Excel Connection Manager 13">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\lomah\Downloads\category.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 14]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{89C397E6-D9B0-4A3D-943E-4EAA7214AE74}"
+      DTS:ObjectName="Excel Connection Manager 14">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\lomah\Downloads\category.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 15]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5BCA3450-E699-497D-9A35-AAD698F4807E}"
+      DTS:ObjectName="Excel Connection Manager 15">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\lomah\Downloads\product.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A618C489-602E-4641-B6A3-C42410995FAC}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8EC61881-6157-4B9E-AA37-F93939EB915C}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{92426B69-F709-4C59-86B9-E2A8C9E6C34B}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.15.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E2B3C1C9-4A1E-4813-8855-C95F99C4BAB4}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{F1230466-603F-49F4-8199-AFB5F71C6DC5}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 7]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8D95CA35-2A55-449D-B4C8-65FA68951982}"
+      DTS:ObjectName="Excel Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 8]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{88BE14F4-3AE9-465B-9948-F0BCD7357E16}"
+      DTS:ObjectName="Excel Connection Manager 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 9]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{57E8BB6E-44ED-49A5-856F-6D47A2607733}"
+      DTS:ObjectName="Excel Connection Manager 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\lomah\Downloads\MOCK_DATA (4) (1).xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E44472BD-5BD6-4988-9361-23233B8BBC33}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\lomah\Downloads\MOCK_DATA (5).csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="category_id"
+              DTS:DTSID="{0C1D22F9-2D85-40A2-82CC-E46026A0F24F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="category_name"
+              DTS:DTSID="{0D20C700-3590-406B-83D6-533A183F5254}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="description"
+              DTS:DTSID="{5AD67CC2-ED24-4FA0-9372-6168699520AB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{798B36DA-F71C-469D-9CBD-00EF3734D3D7}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\lomah\Downloads\Product.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{5C99EAA9-A7F3-4023-B974-E4AF67F18B74}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{FE2E895D-D1AC-48CD-ADD1-F7943DDFDDC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SupplierID"
+              DTS:DTSID="{128072A5-8971-4CF9-975D-034452916FDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CategoryID"
+              DTS:DTSID="{36EACCDE-D6B4-4147-B220-DE4F46CE185B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{FB76E83F-9609-4265-ACB4-E6DC5BFABD52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{865E3B1C-B8FD-4BE9-A0FD-56BADC31AB57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="weight"
+              DTS:DTSID="{65B201D4-E491-4EA3-855A-D9ECD8C4C5B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="description"
+              DTS:DTSID="{ACFFF22B-1FE3-4D75-83E6-8A4AA76A5A42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="rating"
+              DTS:DTSID="{21A2075F-7A5C-4516-A702-771AF31B7171}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discounted"
+              DTS:DTSID="{2F686FFD-F3A8-4541-9B76-EF0AB5AFEAA7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnintInStock"
+              DTS:DTSID="{90C99BB3-EA42-48F3-81C0-382C0F862F43}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnintInOrder"
+              DTS:DTSID="{320976E5-6E77-4FE3-9C46-3BC756A5201F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="color"
+              DTS:DTSID="{0CE842DF-2B57-4D34-9698-D40A68710DC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="startDate"
+              DTS:DTSID="{2F743AA8-B7F3-4B36-81A0-92C1F4433791}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="endDate"
+              DTS:DTSID="{DEA45149-3AE8-4E08-8DAF-DAB623A2BEB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="currentFlag"
+              DTS:DTSID="{BCB3325E-EC4B-4D64-854A-75BA92FA4A99}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-K83S9BL2\MSSQLSERVER01]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BE723B0B-0E4B-41AE-B4C6-14A1DEA83B3E}"
+      DTS:ObjectName="LAPTOP-K83S9BL2\MSSQLSERVER01">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-K83S9BL2\MSSQLSERVER01;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{BE723B0B-0E4B-41AE-B4C6-14A1DEA83B3E}LAPTOP-K83S9BL2\MSSQLSERVER01;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-K83S9BL2\MSSQLSERVER01.STG_HyperMarket]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A3603AB0-DF83-46E4-A31B-D03DEB5A6F26}"
+      DTS:ObjectName="LAPTOP-K83S9BL2\MSSQLSERVER01.STG_HyperMarket">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-K83S9BL2\MSSQLSERVER01;Initial Catalog=STG_HyperMarket;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{A3603AB0-DF83-46E4-A31B-D03DEB5A6F26}LAPTOP-K83S9BL2\MSSQLSERVER01.STG_HyperMarket;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\product"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F5425F0D-FFB5-4F3F-8180-8EDA281F8991}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="product"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\product\CRS_product"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="CRS_product"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">data$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\product\CRS_product.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 15]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 15]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\product\CRS_product.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[name]"
+                      length="255"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[CategoryID]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[CategoryID]"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[CategoryID]"
+                      name="CategoryID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[id]"
+                      dataType="r8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="255"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[SupplierID]"
+                      dataType="r8"
+                      name="SupplierID" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[CategoryID]"
+                      dataType="r8"
+                      name="CategoryID" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[Quantity]"
+                      dataType="r8"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[price]"
+                      dataType="r8"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[weight]"
+                      dataType="r8"
+                      name="weight" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[rating]"
+                      dataType="r8"
+                      name="rating" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[Discounted]"
+                      dataType="bool"
+                      name="Discounted" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[startDate]"
+                      dataType="wstr"
+                      length="255"
+                      name="startDate" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[endDate]"
+                      dataType="wstr"
+                      length="255"
+                      name="endDate" />
+                    <externalMetadataColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Output].ExternalColumns[currentFlag]"
+                      dataType="r8"
+                      name="currentFlag" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\product\CRS_product.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[CategoryID]"
+                      dataType="r8"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Error Output].Columns[CategoryID]"
+                      name="CategoryID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\product\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\product\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\product\Data Conversion.Inputs[Data Conversion Input].Columns[CategoryID]"
+                      cachedDataType="r8"
+                      cachedName="CategoryID"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[CategoryID]" />
+                    <inputColumn
+                      refId="Package\product\Data Conversion.Inputs[Data Conversion Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\product\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\product\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CategoryID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CategoryID]"
+                      name="Copy of CategoryID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\product\CRS_product.Outputs[Excel Source Output].Columns[CategoryID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of name]"
+                      name="Copy of name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\product\CRS_product.Outputs[Excel Source Output].Columns[name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\product\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\product\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\product\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\product\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\product\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\product\Data Conversion 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\product\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\product\Data Conversion 1.Inputs[Data Conversion Input].Columns[CategoryID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CategoryID"
+                      lineageId="Package\product\SRC_product.Outputs[Flat File Source Output].Columns[CategoryID]" />
+                    <inputColumn
+                      refId="Package\product\Data Conversion 1.Inputs[Data Conversion Input].Columns[name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="name"
+                      lineageId="Package\product\SRC_product.Outputs[Flat File Source Output].Columns[name]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\product\Data Conversion 1.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\product\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of CategoryID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of CategoryID]"
+                      name="Copy of CategoryID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\product\SRC_product.Outputs[Flat File Source Output].Columns[CategoryID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of name]"
+                      name="Copy of name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\product\SRC_product.Outputs[Flat File Source Output].Columns[name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\product\Data Conversion 1.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\product\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\product\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\product\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\product\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\product\Des_DB_product"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Des_DB_product"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Product]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\product\Des_DB_product.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-K83S9BL2\MSSQLSERVER01.STG_HyperMarket]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-K83S9BL2\MSSQLSERVER01.STG_HyperMarket]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input].Columns[Copy of CategoryID]"
+                      cachedDataType="i4"
+                      cachedName="Copy of CategoryID"
+                      externalMetadataColumnId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of CategoryID]" />
+                    <inputColumn
+                      refId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input].Columns[Copy of name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of name"
+                      externalMetadataColumnId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input].ExternalColumns[PName]"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
+                      dataType="i4"
+                      name="CategoryID" />
+                    <externalMetadataColumn
+                      refId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input].ExternalColumns[PID]"
+                      dataType="i4"
+                      name="PID" />
+                    <externalMetadataColumn
+                      refId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input].ExternalColumns[PName]"
+                      dataType="wstr"
+                      length="50"
+                      name="PName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\product\Des_DB_product.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\Des_DB_product.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\product\Des_DB_product.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\product\Des_DB_product.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\product\Des_DB_product.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\product\SRC_product"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="SRC_product"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\product\SRC_product.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\product\SRC_product.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].Columns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      length="50"
+                      lineageId="Package\product\SRC_product.Outputs[Flat File Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].Columns[CategoryID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
+                      length="50"
+                      lineageId="Package\product\SRC_product.Outputs[Flat File Source Output].Columns[CategoryID]"
+                      name="CategoryID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SupplierID" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CategoryID" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[Quantity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[weight]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="weight" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="description" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[rating]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="rating" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[Discounted]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Discounted" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[UnintInStock]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="UnintInStock" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[UnintInOrder]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="UnintInOrder" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[color]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="color" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[startDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="startDate" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[endDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="endDate" />
+                    <externalMetadataColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Output].ExternalColumns[currentFlag]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="currentFlag" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\product\SRC_product.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\product\SRC_product.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\product\SRC_product.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\product\SRC_product.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\product\SRC_product.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\product\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\product\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      lineageId="Package\product\234:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[SupplierID]"
+                      cachedDataType="r8"
+                      cachedName="SupplierID"
+                      lineageId="Package\product\235:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[SupplierID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[CategoryID]"
+                      cachedDataType="r8"
+                      cachedName="CategoryID"
+                      lineageId="Package\product\CRS_product.Outputs[Excel Source Output].Columns[CategoryID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[CategoryID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[Quantity]"
+                      cachedDataType="r8"
+                      cachedName="Quantity"
+                      lineageId="Package\product\236:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[Quantity]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[price]"
+                      cachedDataType="r8"
+                      cachedName="price"
+                      lineageId="Package\product\237:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[price]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[weight]"
+                      cachedDataType="r8"
+                      cachedName="weight"
+                      lineageId="Package\product\238:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[weight]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[rating]"
+                      cachedDataType="r8"
+                      cachedName="rating"
+                      lineageId="Package\product\239:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[rating]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[Discounted]"
+                      cachedDataType="bool"
+                      cachedName="Discounted"
+                      lineageId="Package\product\240:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[Discounted]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[startDate]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="startDate"
+                      lineageId="Package\product\241:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[startDate]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[endDate]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="endDate"
+                      lineageId="Package\product\242:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[endDate]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[currentFlag]"
+                      cachedDataType="r8"
+                      cachedName="currentFlag"
+                      lineageId="Package\product\243:invalid">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[currentFlag]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[Copy of CategoryID]"
+                      cachedDataType="i4"
+                      cachedName="Copy of CategoryID"
+                      lineageId="Package\product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CategoryID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of CategoryID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 1].Columns[Copy of name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of name"
+                      lineageId="Package\product\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of name]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\product\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 2].Columns[Copy of CategoryID]"
+                      cachedDataType="i4"
+                      cachedName="Copy of CategoryID"
+                      lineageId="Package\product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of CategoryID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of CategoryID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\product\Union All.Inputs[Union All Input 2].Columns[Copy of name]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of name"
+                      lineageId="Package\product\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of name]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\product\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\product\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[SupplierID]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[SupplierID]"
+                      name="SupplierID" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[CategoryID]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[CategoryID]"
+                      name="CategoryID" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[Quantity]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[Quantity]"
+                      name="Quantity" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[price]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[price]"
+                      name="price" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[weight]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[weight]"
+                      name="weight" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[rating]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[rating]"
+                      name="rating" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[Discounted]"
+                      dataType="bool"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[Discounted]"
+                      name="Discounted" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[startDate]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[startDate]"
+                      name="startDate" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[endDate]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[endDate]"
+                      name="endDate" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[currentFlag]"
+                      dataType="r8"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[currentFlag]"
+                      name="currentFlag" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of CategoryID]"
+                      dataType="i4"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of CategoryID]"
+                      name="Copy of CategoryID" />
+                    <outputColumn
+                      refId="Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of name]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\product\Union All.Outputs[Union All Output 1].Columns[Copy of name]"
+                      name="Copy of name" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\product.Paths[Data Conversion Output]"
+              endId="Package\product\Union All.Inputs[Union All Input 1]"
+              name="Data Conversion Output"
+              startId="Package\product\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\product.Paths[Data Conversion Output1]"
+              endId="Package\product\Union All.Inputs[Union All Input 2]"
+              name="Data Conversion Output"
+              startId="Package\product\Data Conversion 1.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\product.Paths[Excel Source Output]"
+              endId="Package\product\Data Conversion.Inputs[Data Conversion Input]"
+              name="Excel Source Output"
+              startId="Package\product\CRS_product.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\product.Paths[Flat File Source Output]"
+              endId="Package\product\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\product\SRC_product.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\product.Paths[Union All Output 1]"
+              endId="Package\product\Des_DB_product.Inputs[OLE DB Destination Input]"
+              name="Union All Output 1"
+              startId="Package\product\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\product"
+          TopLeft="267.499989370505,148.200001177788" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\product">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="140.8,41.6"
+          Id="Package\product\SRC_product"
+          TopLeft="552,109" />
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\product\Data Conversion 1"
+          TopLeft="500.333333333333,195" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\product\Union All"
+          TopLeft="476,310" />
+        <NodeLayout
+          Size="157.6,41.6"
+          Id="Package\product\Des_DB_product"
+          TopLeft="462.999986886979,400.200002520879" />
+        <NodeLayout
+          Size="140.8,41.6"
+          Id="Package\product\CRS_product"
+          TopLeft="186.238095238095,115.190476190476" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\product\Data Conversion"
+          TopLeft="215,207" />
+        <EdgeLayout
+          Id="Package\product.Paths[Flat File Source Output]"
+          TopLeft="622.4,150.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-40.0666666666667,44.4"
+              Start="0,0"
+              End="-40.0666666666667,36.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.2"
+                    Point2="0,22.2"
+                    Point3="-4,22.2" />
+                  <mssgle:LineSegment
+                    End="-36.0666666666667,22.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.0666666666667,22.2"
+                    Point2="-40.0666666666667,22.2"
+                    Point3="-40.0666666666667,26.2" />
+                  <mssgle:LineSegment
+                    End="-40.0666666666667,36.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\product.Paths[Excel Source Output]"
+          TopLeft="256.638095238095,156.790476190476">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36.3619047619047,50.2095238095238"
+              Start="0,0"
+              End="36.3619047619047,42.7095238095238">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.1047619047619" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.1047619047619"
+                    Point2="0,25.1047619047619"
+                    Point3="4,25.1047619047619" />
+                  <mssgle:LineSegment
+                    End="32.3619047619047,25.1047619047619" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.3619047619047,25.1047619047619"
+                    Point2="36.3619047619047,25.1047619047619"
+                    Point3="36.3619047619047,29.1047619047619" />
+                  <mssgle:LineSegment
+                    End="36.3619047619047,42.7095238095238" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\product.Paths[Data Conversion Output1]"
+          TopLeft="582.333333333333,236.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-27.6666666666666,73.4000000000001"
+              Start="0,0"
+              End="-27.6666666666666,65.9000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.4605263157895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.4605263157895"
+                    Point2="0,43.4605263157895"
+                    Point3="-4,43.4605263157895" />
+                  <mssgle:LineSegment
+                    End="-23.6666666666666,43.4605263157895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-23.6666666666666,43.4605263157895"
+                    Point2="-27.6666666666666,43.4605263157895"
+                    Point3="-27.6666666666666,47.4605263157895" />
+                  <mssgle:LineSegment
+                    End="-27.6666666666666,65.9000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\product.Paths[Data Conversion Output]"
+          TopLeft="293,248.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="243,61.4000000000001"
+              Start="0,0"
+              End="243,53.9000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.7000000000001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.7000000000001"
+                    Point2="0,30.7000000000001"
+                    Point3="4,30.7000000000001" />
+                  <mssgle:LineSegment
+                    End="239,30.7000000000001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="239,30.7000000000001"
+                    Point2="243,30.7000000000001"
+                    Point3="243,34.7000000000001" />
+                  <mssgle:LineSegment
+                    End="243,53.9000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="113.5,35.7000000000001,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\product.Paths[Union All Output 1]"
+          TopLeft="538.89999344349,351.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.6000025208788"
+              Start="0,0"
+              End="0,41.1000025208788">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.1000025208788" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\product\Des_DB_product">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\product\CRS_product">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
